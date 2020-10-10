@@ -1,0 +1,224 @@
+<div><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="javas.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script async src="/script/lazysizes.min.js"></script>
+</div>
+<script>
+var slideIndex = 1;
+  showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+function showSlides(n) {
+  var i;
+   var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+
+//login
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+      modal.style.display = "none";
+  }
+}
+
+
+//sign up
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+  modal.style.display = "none";
+}
+}</script>
+<div id="top">
+  <div id="acc">
+      <ul>
+          <li><button>Giỏ hàng</button></li>
+          <li>
+              <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Đăng Ký</button>
+              <div id="id02" class="modal">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content">
+                  <div class="container">
+                    <hr>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+
+                    <p>Bằng cách tạo một tài khoản, bạn đồng ý với<a href="#" style="color:dodgerblue">Điều khoản & Quyền riêng tư</a></p>
+                    <div class="clearfix">
+                      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                      <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+          </li>
+          <li>
+              <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Đăng Nhập</button>
+              <div id="id01" class="modal">
+                <form class="modal-content animate" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  </div>
+
+                  <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"> Cancel</button>
+                    <span class="psw" style="color: black;">Forgot <a href="#">password?</a></span>
+                  </div>
+                </form>
+              </div>
+          </li>
+      </ul>
+  </div>
+</div>
+<div id="menu_top">
+  <div id="logo"><a href="#"><img src="http://ecom14.topwebviet.com/images/ecom14/1/images/logo.png"></a></div>
+  <div id="thumuc">
+      <ul>
+          <li> <a href="#" title="Trang chủ"> Trang chủ</a></li>
+          <li> <a href="#" title="Sản phẩm">Sản phẩm</a></li>
+          <li> <a href="contact.html" title="Liên hệ">Liên hệ</a></li>
+          <li> <a href="#" title="Giới thiệu">Giới thiệu</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </ul>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div id="banner">
+  <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="http://ecom14.topwebviet.com/images/ecom14/1/images/slideshow_2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="http://ecom14.topwebviet.com/images/ecom14/1/images/slideshow_1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="http://ecom14.topwebviet.com/images/ecom14/1/images/slideshow_3.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="http://ecom14.topwebviet.com/images/ecom14/1/images/slideshow_4.jpg" style="width:100%">
+   </div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+
+</div>
+</div>
+<div id="main">
+  <div id="left">
+      <ul>
+          <li> <a href="#" title="SÁCH KINH TẾ">SÁCH KINH TẾ </a></li>
+          <li> <a href="#" title="VĂN HỌC">VĂN HỌC </a></li>
+          <li> <a href="#" title="TRUYỆN TRANH">TRUYỆN TRANH </a></li>
+          <li> <a href="#" title="TIỂU THUYẾT">TIỂU THUYẾT </a></li>
+          <li> <a href="#" title="GIÁO KHOA">GIÁO KHOA </a></li>
+          <li> <a href="#" title="QUÀ TẶNG">QUÀ TẶNG </a></li>
+      </ul>
+  </div>
+  <div id="right">
+      <div class="row">
+          <div class="column">
+              <img src="http://ecom14.topwebviet.com/images/ecom14/1/images/viet-nam-danh-tac.jpg" style="width:100%;" class="zoom">
+              <h2>Việt Nam Danh Tác</h2>
+          </div>
+          <div class="column">
+              <img src="http://ecom14.topwebviet.com/images/ecom14/1/images/tu-tot-den-vi-dai.jpg" style="width:100%;" class="zoom">
+              <h2>Từ Tốt Đến Vĩ Đại</h2>
+          </div>
+          <div class="column">
+              <img src="http://ecom14.topwebviet.com/images/ecom14/1/images/tay-du-ky.jpg" style="width:100%;" class="zoom">
+              <h2>Tây Du Ký</h2>
+          </div>
+          <div class="column">
+              <img src="http://ecom14.topwebviet.com/images/ecom14/1/images/quan-khu-nam-dong.jpg" style="width:100%;" class="zoom">
+              <h2>Quân Khu Nam Đông</h2>
+          </div>
+          </div>
+          <div class="column">
+              <img src="http://ecom14.topwebviet.com/images/ecom14/1/images/nhat-ky-hoc-lam-banh.jpg" style="width:100%;" class="zoom">
+              <h2>Nhật Ký Học Làm</h2>
+          </div>
+          <div class="column">
+              <img src="http://ecom14.topwebviet.com/images/ecom14/1/images/ngam-vinh-phong-ca.jpg" style="width:100%;" class="zoom">
+              <h2>Ngắm Vịnh Phong Ca</h2>
+          </div>
+          <div class="column">
+              <img src="http://ecom14.topwebviet.com/images/ecom14/1/images/pr26_large.jpg" style="width:100%;" class="zoom">
+              <h2>Quan Trọng là Đẹp Trai</h2>
+          </div>
+          <div class="column">
+              <img src="http://ecom14.topwebviet.com/images/ecom14/1/images/pr20_large.jpg" style="width:100%;" class="zoom">
+              <h2>Thương Hiệu thành Biểu tượng</h2>
+          </div>
+          </div>
+      </div>
+<div id="footer">
+  <a> Copy by TranDue | </a>&nbsp;&nbsp;
+  <a href="#" class="fa fa-facebook"></a>&nbsp;
+  <a href="#" class="fa fa-youtube"></a>&nbsp;
+  <a href="#" class="fa fa-instagram"></a>&nbsp;
+</div>

@@ -1,0 +1,468 @@
+body {
+  font-family: Tahoma;
+  font-size: 13px;
+  width: 1000px;
+  margin: 0px auto;
+}
+#top{
+  height: 50px;
+  padding: 0px 0px 10px 20px;
+  color:#0f0f0f;
+}
+
+#top a{
+  text-decoration: none;
+  display: block;
+  color:#ccc;
+}
+#top #acc ul{
+  margin:0px;
+  padding: 0px;
+}
+#top #acc ul li{
+  list-style: none;
+  float: right;
+}
+#top #acc ul li a{
+  text-decoration: none;
+  display: block;
+  height: 40px;
+  line-height: 10px;
+  padding: 0px 20px 0px 20px;
+}
+#menu_top{
+  height: 60px;
+  width: 1000px;
+}
+#menu_top #logo{
+  height: 50px;
+  float: left;
+}
+#menu_top #thumuc{
+  height: 50px;
+  float: left;
+}
+#menu_top #search{
+  height: 60px;
+  float: right;
+  line-height: 50px;
+}
+#banner{
+  height: 460px;
+  width: 1000px;
+}
+#main #left{
+  width:200px;
+  float: left;
+  min-height:400px;
+}
+#main #left ul li{
+  list-style: none;
+  float: left;
+  padding: 10px 20px 0px 20px;
+}
+#main #left ul li a{
+  text-decoration: none;
+  display: block;
+}
+#main #right{
+  width:800px;
+  float: left;
+  min-height:400px;
+}
+#main #right .row .column h2{
+  text-align: center;
+}
+#footer{
+  width: 1000px;
+  text-align: center;
+  height: 60px;
+  color: rgb(8, 8, 8);
+  clear: left;
+  line-height: 60px;
+}
+#footer a{
+  text-decoration: none;
+}
+#menu_top #thumuc ul{
+  margin:0px;
+  padding: 0px;
+}
+#menu_top #thumuc ul li{
+  list-style: none;
+  float: left;
+}
+#menu_top #thumuc ul li a{
+  text-decoration: none;
+  display: block;
+  height: 40px;
+  line-height: 50px;
+  padding: 0px 20px 0px 20px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+*{
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column  {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column  {
+    width: 100%;
+  }
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid rgb(255, 255, 255);
+box-sizing: border-box;
+}
+
+/* Set a style for all buttons
+*/
+button {
+background-color: #345e80;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+
+button:hover{
+opacity: 0.9;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+width: auto;
+padding: 14px 20px;
+background-color: #fc1105;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+margin: 24px 0 12px 0;
+position: relative;
+}
+.container {
+padding: 16px;
+}
+
+span.psw {
+float: right;
+padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+text-align: center;
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(236, 236, 236); /* Fallback color */
+background-color: rgb(255, 255, 255); /* Black w/ opacity */
+padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #f3efef;
+margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+border: 1px solid rgb(228, 222, 222)21;
+width: 40%; /* Could be more or less, depending on screen size */
+height: 40%;
+}
+/* The Close Button (x) */
+.close {
+position: absolute;
+right: 25px;
+top: 0;
+color: #000;
+font-size: 35px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)}
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+from {transform: scale(0)}
+to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+span.psw {
+   display: block;
+   float: none;
+}
+.cancelbtn {
+   width: 100%;
+}
+}
+/* signup */
+body {font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+/* Set a style for all buttons */
+button:hover{
+opacity:0.9;
+}
+
+/* Extra styles for the cancel button */
+
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+width: auto;
+}
+
+/* Add padding to container elements */
+.container {
+padding: 0px;
+}
+
+/* The Modal (background) */
+.modal {
+text-align: center;
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(236, 236, 236); /* Fallback color */
+background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
+padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+border: 1px solid rgb(228, 222, 222)21;
+width: 40%; /* Could be more or less, depending on screen size */
+height: 40%;
+}
+
+/* Style the horizontal ruler */
+hr {
+border: 0px solid #f1f1f1;
+margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+position: absolute;
+right: 35px;
+top: 15px;
+font-size: 40px;
+font-weight: bold;
+color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+cursor: pointer;
+}
+/* Clear floats */
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 30px) {
+.cancelbtn, .signupbtn {
+   width: 100%;
+}
+}
+
+
+/*Zoom*/
+*{
+box-sizing: border-box;
+}
+
+.zoom {
+transition: transform .3s;
+width: 200px;
+height: 150px;
+margin: 0 auto;
+padding: 0px 0px 10px 20px;
+}
+
+.zoom:hover {
+-ms-transform: scale(1.5); /* IE 9 */
+-webkit-transform: scale(1.5); /* Safari 3-8 */
+transform: scale(1.5);
+}
